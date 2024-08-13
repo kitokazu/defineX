@@ -1,0 +1,86 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import astronautImage from "~/assets/astronaut.png";
+import HeroImage from "~/components/hero-image.astro";
+---
+
+<section
+  class="p relative h-full bg-black bg-[url('earth_map.png')] bg-contain bg-[center_30%] bg-no-repeat"
+>
+  <!-- <div id="hero-bg-fallback" class="absolute inset-0 hidden opacity-40">
+    <HeroImage />
+  </div> -->
+
+  <div class="3xl:py-64 relative h-full place-items-center py-32 2xl:py-48">
+    <!-- Header  -->
+    <h2
+      class="flex flex-col items-center gap-2 self-end px-8 italic sm:gap-4 sm:self-auto sm:justify-self-end"
+    >
+      <div
+        class="flex gap-2 px-8 text-center font-extrabold tracking-tighter text-6xl sm:mr-8 md:text-7xl lg:mr-64 lg:gap-8 lg:self-center"
+      >
+        <div class="text-stroke-blue bg-clip-text text-transparent">
+          ELEVATING
+        </div>
+        <div class="gradient-text-blue">POTENTIAL</div>
+      </div>
+      <div
+        class="flex gap-2 px-12 text-center font-extrabold tracking-tighter text-6xl sm:ml-8 md:text-7xl lg:ml-64 lg:gap-8 lg:self-center"
+      >
+        <div class="text-stroke-white bg-clip-text text-transparent">
+          DEFINING
+        </div>
+        <div class="gradient-text-white pr-8">FUTURES</div>
+      </div>
+    </h2>
+    <!-- Description -->
+    <div
+      class="mx-auto mt-8 flex w-full flex-col items-center px-4 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3"
+    >
+      <span class="text-center font-light tracking-wide text-sm">
+        We are more than just a company: we are a foundation for Japan's premier
+        sports and education community</span
+      >
+    </div>
+    <!-- Hastags -->
+    <div
+      class="mx-auto mt-8 flex w-full flex-col items-center px-4 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3"
+    >
+      <span class="text-center font-light tracking-wide text-primary text-sm">
+        #EndlessPossiblities</span
+      >
+      <span class="text-center font-light tracking-wide text-primary text-sm">
+        #YourTomorrowStartsHere</span
+      >
+    </div>
+    <!-- Buttons  -->
+    <div class="mt-8 flex flex-col items-center gap-4 xl:mt-12 2xl:mt-16">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-12 2xl:gap-16">
+        <a
+          href="#"
+          class="flex items-center justify-center gap-3 rounded-sm bg-primary px-4 py-3"
+        >
+          <span class="text-xs">DEFINE ACADEMY</span>
+        </a>
+        <a
+          href="https://definex.jp/dfm/"
+          class="flex items-center justify-center gap-3 rounded-sm bg-primary px-4 py-3"
+        >
+          <span class="text-xs">SPORTS</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="3xl:mt-32 mt-16 flex flex-col items-center">
+      <img
+        src="logo_title.png"
+        alt="DefineX logo"
+        width={96}
+        height={96}
+        class="w-48 2xl:w-64"
+      />
+    </div>
+  </div>
+</section>

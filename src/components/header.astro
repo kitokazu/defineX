@@ -12,25 +12,25 @@ const navItems: Array<NavItem> = [
 
 <header
   id="page-header"
-  class="fixed bottom-auto top-0 z-20 flex w-full items-center justify-between border-b border-default bg-default px-24 py-2 text-default text-white"
+  class="fixed bottom-auto top-0 z-20 flex w-full items-center justify-between border-b border-default bg-default px-6 py-2 text-default text-white text-xs lg:px-12"
 >
-  <a class="flex items-center gap-3 hover:!text-default" href="/">
+  <a class="flex items-center gap-3 hover:!text-default" href="#">
     <img
       src="logo.png"
       alt="DefineX logo"
       width={60}
       height={60}
-      class="w-24"
+      class="w-20"
     />
   </a>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
-        <ul class="flex items-center gap-24">
+        <ul class="flex items-center gap-8">
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-xs" href={url}>
                   {title}
                 </a>
               </li>

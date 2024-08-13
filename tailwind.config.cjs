@@ -5,7 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+      },
+      screens: {
+        "3xl": "1920px", // Custom breakpoint for screens larger than 1920px
       },
       colors: {
         primary: "var(--color-primary)",

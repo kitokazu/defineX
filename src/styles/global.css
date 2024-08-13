@@ -6,7 +6,21 @@ a,
   @apply focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-transparent;
 }
 
-.gradient-text {
+.gradient-text-blue {
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-cyan-500 via-cyan-400 to-cyan-700;
+}
+
+.gradient-text-white {
+  @apply bg-clip-text text-transparent;
+  @apply bg-white bg-gradient-to-br;
+}
+
+/* Custom CSS */
+.text-stroke-blue {
+  -webkit-text-stroke: 1.5px rgb(34, 211, 238); /* Define the stroke color */
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px white; /* Define the stroke color */
 }
