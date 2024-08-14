@@ -19,9 +19,9 @@ const services: Array<ServiceItem> = [
 
 <section
   id="services"
-  class="flex scroll-mt-24 flex-col items-center gap-4 space-y-8"
+  class="flex scroll-mt-20 flex-col items-center gap-4 space-y-8"
 >
-  <div class="flex flex-col items-center gap-4">
+  <div class="mt-10 flex flex-col items-center gap-4">
     <h2
       class="gradient-text text-center font-semibold uppercase italic tracking-tight text-6xl"
     >
@@ -29,7 +29,7 @@ const services: Array<ServiceItem> = [
     </h2>
   </div>
 
-  <div class="grid w-full grid-cols-1 gap-16 px-16 lg:grid-cols-2 xl:px-32">
+  <div class="grid w-full grid-cols-1 gap-16 px-16 lg:grid-cols-2 xl:px-24">
     {
       services.map(({ id, title, description }) => (
         <ServiceBox id={id} title={title} description={description} />

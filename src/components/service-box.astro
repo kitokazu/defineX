@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 export interface Props {
   id: string;
   title: string;
@@ -30,7 +32,10 @@ const { id, title, description } = Astro.props;
         href="#"
         class="flex items-center justify-center gap-3 rounded-sm bg-primary px-4 py-3"
       >
-        <span class="text-xs">Learn More</span>
+        <div class="flex items-center justify-center gap-2">
+          <span class="uppercase text-xs">Learn More</span>
+          <Icon name="mdi:arrow-right" class="size-4" />
+        </div>
       </a>
     </div>
   </div>
