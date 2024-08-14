@@ -1,6 +1,7 @@
 # DefineX Landing Page
 
-</div>
+https://definex.netlify.app/
+
 ## Features
 
 - 💨 Tailwind CSS for styling
