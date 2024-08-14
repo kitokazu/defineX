@@ -5,8 +5,10 @@ import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
+import About from "~/components/about.astro";
 import HeroSection from "~/components/hero-section.astro";
 import Showcase from "~/components/showcase.astro";
+import Services from "~/components/services.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
@@ -21,10 +23,10 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/logo.png" type="image/svg+xml" />
     <meta name="generator" content={generator} />
 
-    <title>Welcome to DefineX</title>
+    <title>DefineX</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
@@ -66,8 +68,8 @@ const description =
     <HeroSection />
     <!-- <Splash /> -->
     <div class="space-y-24 px-8 py-32">
-      <Intro />
-      <Features />
+      <About />
+      <Services />
       <Compatibility />
       <Showcase />
     </div>

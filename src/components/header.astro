@@ -4,15 +4,15 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "About Us", url: "#features" },
-  { title: "Services", url: "#compatibility" },
+  { title: "About Us", url: "#about" },
+  { title: "Services", url: "#services" },
   { title: "Contact Us", url: "#showcase" },
 ];
 ---
 
 <header
   id="page-header"
-  class="fixed bottom-auto top-0 z-20 flex w-full items-center justify-between border-b border-default bg-default px-6 py-2 text-default text-white text-xs lg:px-12"
+  class="fixed bottom-auto top-0 z-20 flex w-full items-center justify-between border-b border-default bg-default px-6 py-2 font-extralight text-default text-white text-xs lg:px-12"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <img

@@ -1,0 +1,61 @@
+---
+import Statement from "./statement.astro";
+---
+
+<section
+  class="flex scroll-mt-24 flex-col items-center gap-4 space-y-8"
+  id="about"
+>
+  <!-- Two Column Section   -->
+  <div class="grid w-full grid-cols-1 px-4 lg:grid-cols-2">
+    <!-- X Logo  -->
+    <div class="flex items-center justify-center">
+      <img src="big_X.png" alt="Nature" class="w-[30rem]" />
+    </div>
+
+    <!-- Description  -->
+    <div>
+      <div
+        class="mt-4 flex flex-col items-center gap-2 px-8 text-center font-semibold italic tracking-tighter text-3xl md:items-start"
+      >
+        <div
+          class="mr-28 w-[28rem] skew-x-[-20deg] transform bg-secondary py-3"
+        >
+          <h2 class="skew-x-[20deg] transform">SPORTS MEETS</h2>
+        </div>
+        <div
+          class="-mt-3 ml-28 w-[28rem] skew-x-[-20deg] transform bg-primary py-3"
+        >
+          <h2 class="skew-x-[20deg] transform">EDUCATION</h2>
+        </div>
+      </div>
+      <div class="mx-auto mt-12 flex w-full flex-col items-center px-8">
+        <span class="text-start font-light tracking-wide text-sm">
+          Our unwavering mission is to be the pinnacle of excellence in sports
+          and education, becoming the go-to-hub that empowers individuals to
+          excel, grow, and define their own success stories. With innovation
+          driving our every move, we are committed to crafting an immersive
+          experience that unites sports and education, setting new standards and
+          shaping a brighter future for all. Join us on this transformative
+          journey as we re-define possibilities and re-define excellence.</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- Three Column Section with Mission  -->
+  <div class="grid w-full grid-cols-1 gap-2 px-16 lg:grid-cols-3">
+    <Statement
+      title="Mission"
+      description="Elevating potential, defining futures"
+    />
+    <Statement
+      title="Vision"
+      description="Become the go-to-hub that empowers individuals to excel, grow, and define their own success stories"
+    />
+    <Statement
+      title="Values"
+      description="Customer centric, integrity, continuous improvement, enjoyment"
+    />
+  </div>
+</section>

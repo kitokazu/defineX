@@ -24,3 +24,7 @@ a,
 .text-stroke-white {
   -webkit-text-stroke: 1.5px white; /* Define the stroke color */
 }
+
+.custom-rotate {
+  transform: rotate(30deg); /* Change 30deg to your desired angle */
+}
