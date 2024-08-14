@@ -29,13 +29,11 @@ const services: Array<ServiceItem> = [
     </h2>
   </div>
 
-  <div class="grid w-full grid-cols-1 gap-8 px-16 lg:grid-cols-2">
+  <div class="grid w-full grid-cols-1 gap-16 px-16 lg:grid-cols-2 xl:px-32">
     {
       services.map(({ id, title, description }) => (
         <ServiceBox id={id} title={title} description={description} />
       ))
     }
   </div>
-
-  <p class="max-w-xl text-center font-extrabold text-2xl">fdsa</p>
 </section>
