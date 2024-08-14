@@ -12,7 +12,7 @@ const services: Array<ServiceItem> = [
   {
     id: "02",
     title: "SPORTS",
-    description: "We provide sports services. Coming soon",
+    description: "We provide sports services. Coming soon. ",
   },
 ];
 ---
@@ -29,7 +29,7 @@ const services: Array<ServiceItem> = [
     </h2>
   </div>
 
-  <div class="grid w-full grid-cols-1 gap-2 px-16 lg:grid-cols-2">
+  <div class="grid w-full grid-cols-1 gap-8 px-16 lg:grid-cols-2">
     {
       services.map(({ id, title, description }) => (
         <ServiceBox id={id} title={title} description={description} />
